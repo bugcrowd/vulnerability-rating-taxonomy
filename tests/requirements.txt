@@ -1,0 +1,3 @@
+jsonschema
+GitPython
+semantic_version
