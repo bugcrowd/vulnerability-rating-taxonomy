@@ -1,3 +1,4 @@
 jsonschema
 GitPython
 semantic_version
+requests
