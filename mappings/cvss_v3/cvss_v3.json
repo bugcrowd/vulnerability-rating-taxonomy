@@ -1,0 +1,1437 @@
+{
+  "metadata": {
+    "default": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+  },
+  "content": [
+    {
+      "id": "server_security_misconfiguration",
+      "children": [
+        {
+          "id": "server_side_request_forgery_ssrf",
+          "children": [
+            {
+              "id": "internal_high_impact",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N"
+            },
+            {
+              "id": "internal_scan_and_or_medium_impact",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N"
+            },
+            {
+              "id": "external_low_impact",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:N/A:L"
+            },
+            {
+              "id": "external_dns_query_only",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:N/A:L"
+            }
+          ]
+        },
+        {
+          "id": "unsafe_cross_origin_resource_sharing",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:N"
+        },
+        {
+          "id": "software_package_takeover",
+          "cvss_v3": "AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+        },        
+        {
+          "id": "email_verification_bypass",
+          "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:N"
+        },
+        {
+          "id": "missing_subresource_integrity",
+          "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:N"
+        },        
+        {
+          "id": "request_smuggling",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "id": "path_traversal",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        },
+        {
+          "id": "directory_listing_enabled",
+          "children": [
+            {
+              "id": "sensitive_data_exposure",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+            },
+            {
+              "id": "non_sensitive_data_exposure",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+            }
+          ]
+        },
+        {
+          "id": "same_site_scripting",
+          "cvss_v3": "AV:L/AC:H/PR:L/UI:R/S:C/C:L/I:L/A:N"
+        },
+        {
+          "id": "ssl_attack_breach_poodle_etc",
+          "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N"
+        },
+        {
+          "id": "using_default_credentials",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L"
+        },
+        {
+          "id": "misconfigured_dns",
+          "children": [
+            {
+              "id": "subdomain_takeover",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+            },
+            {
+              "id": "zone_transfer",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+            },
+            {
+              "id": "missing_caa_record",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:N"
+            }
+          ]
+        },
+        {
+          "id": "mail_server_misconfiguration",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N",
+          "children": [
+            {
+              "id": "no_spoofing_protection_on_email_domain",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+            },
+            {
+              "id": "email_spoofing_to_inbox_due_to_missing_or_misconfigured_dmarc_on_email_domain",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N"
+            }
+          ]
+        },
+        {
+          "id": "dbms_misconfiguration",
+          "children": [
+            {
+              "id": "excessively_privileged_user_dba",
+              "cvss_v3": "AV:N/AC:H/PR:H/UI:N/S:U/C:L/I:L/A:N"
+            }
+          ]
+        },
+        {
+          "id": "lack_of_password_confirmation",
+          "cvss_v3": "AV:P/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:L",
+          "children": [
+            {
+              "id": "manage_two_fa",
+              "cvss_v3": "AV:P/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L"
+            }
+          ]
+        },
+        {
+          "id": "no_rate_limiting_on_form",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:L/A:N",
+          "children": [
+            {
+              "id": "login",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+            },
+            {
+              "id": "change_password",
+              "cvss_v3": "AV:P/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:L"
+            }
+          ]
+        },
+        {
+          "id": "unsafe_file_upload",
+          "children": [
+            {
+              "id": "no_antivirus",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:C/C:N/I:L/A:N"
+            },
+            {
+              "id": "no_size_limit",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+            },
+            {
+              "id": "file_extension_filter_bypass",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+            }
+          ]
+        },
+        {
+          "id": "cookie_scoped_to_parent_domain",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+        },
+        {
+          "id": "missing_secure_or_httponly_cookie_flag",
+          "children": [
+            {
+              "id": "session_token",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+            },
+            {
+              "id": "non_session_cookie",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+            }
+          ]
+        },
+        {
+          "id": "clickjacking",
+          "children": [
+            {
+              "id": "sensitive_action",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+            },
+            {
+              "id": "form_input",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N"
+            },
+            {
+              "id": "non_sensitive_action",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:N"
+            }
+          ]
+        },
+        {
+          "id": "oauth_misconfiguration",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+          "children": [
+            {
+              "id": "account_takeover",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+            },
+            {
+              "id": "account_squatting",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N"
+            }
+          ]
+        },
+        {
+          "id": "captcha",
+          "children": [
+            {
+              "id": "implementation_vulnerability",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+            },
+            {
+              "id": "brute_force",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:N"
+            },
+            {
+              "id": "missing",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+            }
+          ]
+        },
+        {
+          "id": "exposed_admin_portal",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+        },
+        {
+          "id": "missing_dnssec",
+          "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:N"
+        },
+        {
+          "id": "fingerprinting_banner_disclosure",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+        },
+        {
+          "id": "username_enumeration",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+        },
+        {
+          "id": "potentially_unsafe_http_method_enabled",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+        },
+        {
+          "id": "insecure_ssl",
+          "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:N"
+        },
+        {
+          "id": "rfd",
+          "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:C/C:N/I:L/A:N"
+        },
+        {
+          "id": "lack_of_security_headers",
+          "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:N",
+          "children": [
+            {
+              "id": "cache_control_for_a_sensitive_page",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+            }
+          ]
+        },
+        {
+          "id": "waf_bypass",
+          "children": [
+            {
+              "id": "direct_server_access",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+            }
+          ]
+        },
+        {
+          "id": "race_condition",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+        },
+        {
+          "id": "cache_poisoning",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+        },
+        {
+          "id": "bitsquatting",
+          "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ]
+    },
+    {
+      "id": "server_side_injection",
+      "children": [
+        {
+          "id": "file_inclusion",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N"
+        },
+        {
+          "id": "parameter_pollution",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+        },
+        {
+          "id": "remote_code_execution_rce",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "id": "ldap_injection",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "id": "sql_injection",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N"
+        },
+        {
+          "id": "xml_external_entity_injection_xxe",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L"
+        },
+        {
+          "id": "http_response_manipulation",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+        },
+        {
+          "id": "content_spoofing",
+          "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:N",
+          "children": [
+            {
+              "id": "iframe_injection",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N"
+            },
+            {
+              "id": "impersonation_via_broken_link_hijacking",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+            },
+            {
+              "id": "external_authentication_injection",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N"
+            },
+            {
+              "id": "flash_based_external_authentication_injection",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:N"
+            },
+            {
+              "id": "html_content_injection",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+            },
+            {
+              "id": "email_html_injection",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N"
+            }
+          ]
+        },
+        {
+          "id": "ssti",
+          "children": [
+            {
+              "id": "basic",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+            },
+            {
+              "id": "custom",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "broken_authentication_and_session_management",
+      "children": [
+        {
+          "id": "authentication_bypass",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L"
+        },
+        {
+          "id": "two_fa_bypass",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+        },
+        {
+          "id": "cleartext_transmission_of_session_token",
+          "cvss_v3": "AV:A/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+        },
+        {
+          "id": "weak_login_function",
+          "children": [
+            {
+              "id": "not_operational",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+            },
+            {
+              "id": "other_plaintext_protocol_no_secure_alternative",
+              "cvss_v3": "AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+            },
+            {
+              "id": "over_http",
+              "cvss_v3": "AV:A/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N"
+            }
+          ]
+        },
+        {
+          "id": "session_fixation",
+          "children": [
+            {
+              "id": "remote_attack_vector",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:N"
+            },
+            {
+              "id": "local_attack_vector",
+              "cvss_v3": "AV:P/AC:H/PR:L/UI:R/S:U/C:H/I:L/A:N"
+            }
+          ]
+        },
+        {
+          "id": "failure_to_invalidate_session",
+          "children": [
+            {
+              "id": "on_logout",
+              "cvss_v3": "AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:N"
+            },
+            {
+              "id": "permission_change",
+              "cvss_v3": "AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:N"
+            },
+            {
+              "id": "on_logout_server_side_only",
+              "cvss_v3": "AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:N"
+            },
+            {
+              "id": "on_password_change",
+              "cvss_v3": "AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:N"
+            },
+            {
+              "id": "all_sessions",
+              "cvss_v3": "AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:N"
+            },
+            {
+              "id": "on_email_change",
+              "cvss_v3": "AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:N"
+            },
+            {
+              "id": "on_two_fa_activation_change",
+              "cvss_v3": "AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:N"
+            },
+            {
+              "id": "long_timeout",
+              "cvss_v3": "AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:N"
+            }
+          ]
+        },
+        {
+          "id": "concurrent_logins",
+          "cvss_v3": "AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:N"
+        },
+        {
+          "id": "weak_registration_implementation",
+          "cvss_v3": "AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:N"
+        }
+      ]
+    },
+    {
+      "id": "data_biases",
+      "children": [
+        {
+          "id": "representation_bias",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:N"
+        },
+        {
+          "id": "pre_existing_bias",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:N"
+        }
+      ]
+    },
+    {
+      "id": "algorithmic_biases",
+      "children": [
+        {
+          "id": "processing_bias",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:N"
+        },
+        {
+          "id": "aggregation_bias",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:N"
+        }
+      ]
+    },
+    {
+      "id": "societal_biases",
+      "children": [
+        {
+          "id": "confirmation_bias",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+        },
+        {
+          "id": "systemic_bias",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:N"
+        }
+      ]
+    },
+    {
+      "id": "misinterpretation_biases",
+      "children": [
+        {
+          "id": "context_ignorance",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+        }
+      ]
+    },
+    {
+      "id": "developer_biases",
+      "children": [
+        {
+          "id": "implicit_bias",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:N"
+        }
+      ]
+    },
+    {
+      "id": "sensitive_data_exposure",
+      "children": [
+        {
+          "id": "disclosure_of_secrets",
+          "children": [
+            {
+              "id": "for_publicly_accessible_asset",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L"
+            },
+            {
+              "id": "pii_leakage_exposure",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H"
+            },
+            {
+              "id": "for_internal_asset",
+              "cvss_v3": "AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:L"
+            },
+            {
+              "id": "pay_per_use_abuse",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+            },
+            {
+              "id": "intentionally_public_sample_or_invalid",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+            },
+            {
+              "id": "data_traffic_spam",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+            },
+            {
+              "id": "non_corporate_user",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+            }
+          ]
+        },
+        {
+          "id": "exif_geolocation_data_not_stripped_from_uploaded_images",
+          "children": [
+            {
+              "id": "automatic_user_enumeration",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+            },
+            {
+              "id": "manual_user_enumeration",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+            }
+          ]
+        },
+        {
+          "id": "visible_detailed_error_page",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N",
+          "children": [
+            {
+              "id": "detailed_server_configuration",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+            }
+          ]
+        },
+        {
+          "id": "disclosure_of_known_public_information",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+        },
+        {
+          "id": "token_leakage_via_referer",
+          "children": [
+            {
+              "id": "trusted_third_party",
+              "cvss_v3": "AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:N"
+            },
+            {
+              "id": "untrusted_third_party",
+              "cvss_v3": "AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:N"
+            },
+            {
+              "id": "over_http",
+              "cvss_v3": "AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:N"
+            },
+            {
+              "id": "password_reset_token",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+            }            
+          ]
+        },
+        {
+          "id": "sensitive_token_in_url",
+          "cvss_v3": "AV:P/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+        },
+        {
+          "id": "non_sensitive_token_in_url",
+          "cvss_v3": "AV:P/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+        },
+        {
+          "id": "weak_password_reset_implementation",
+          "cvss_v3": "AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:N/A:N",
+          "children": [
+            {
+              "id": "token_leakage_via_host_header_poisoning",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:L"
+            }
+          ]
+        },
+        {
+          "id": "mixed_content",
+          "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:N/A:N"
+        },
+        {
+          "id": "sensitive_data_hardcoded",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+        },
+        {
+          "id": "internal_ip_disclosure",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+        },
+        {
+          "id": "xssi",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:N"
+        },
+        {
+          "id": "json_hijacking",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:N"
+        },
+        {
+          "id": "via_localstorage_sessionstorage",
+          "children": [
+            {
+              "id": "sensitive_token",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+            },
+            {
+              "id": "non_sensitive_token",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:N"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross_site_scripting_xss",
+      "children": [
+        {
+          "id": "stored",
+          "children": [
+            {
+              "id": "non_admin_to_anyone",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N"
+            },
+            {
+              "id": "privileged_user_to_privilege_elevation",
+              "cvss_v3": "AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:N"
+            },
+            {
+              "id": "privileged_user_to_no_privilege_elevation",
+              "cvss_v3": "AV:N/AC:L/PR:H/UI:N/S:C/C:L/I:L/A:N"
+            },
+            {
+              "id": "url_based",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+            },
+            {
+              "id": "self",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+            }
+          ]
+        },
+        {
+          "id": "reflected",
+          "children": [
+            {
+              "id": "non_self",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+            },
+            {
+              "id": "self",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+            }
+          ]
+        },
+        {
+          "id": "flash_based",
+          "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:C/C:N/I:N/A:N"
+        },
+        {
+          "id": "cookie_based",
+          "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:C/C:N/I:N/A:N"
+        },
+        {
+          "id": "ie_only",
+          "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        },
+        {
+          "id": "referer",
+          "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        },
+        {
+          "id": "trace_method",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+        },
+        {
+          "id": "universal_uxss",
+          "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        },
+        {
+          "id": "off_domain",
+          "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        }
+      ]
+    },
+    {
+      "id": "broken_access_control",
+      "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "children": [
+        {
+          "id": "username_enumeration",
+          "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        },
+        {
+          "id": "privilege_escalation",
+          "cvss_v3": "AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N"
+        }        
+      ]
+    },
+    {
+      "id": "cross_site_request_forgery_csrf",
+      "children": [
+        {
+          "id": "application_wide",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:L"
+        },
+        {
+          "id": "action_specific",
+          "children": [
+            {
+              "id": "authenticated_action",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:H/A:N"
+            },
+            {
+              "id": "unauthenticated_action",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+            },
+            {
+              "id": "logout",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:N"
+            }
+          ]
+        },
+        {
+          "id": "csrf_token_not_unique_per_request",
+          "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:N"
+        },
+        {
+          "id": "flash_based",
+          "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:N"
+        }
+      ]
+    },
+    {
+      "id": "application_level_denial_of_service_dos",
+      "children": [
+        {
+          "id": "critical_impact_and_or_easy_difficulty",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "id": "high_impact_and_or_medium_difficulty",
+          "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "id": "app_crash",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+        },
+        {
+          "id": "excessive_resource_consumption",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:H/A:H"
+        }
+      ]
+    },
+    {
+      "id": "unvalidated_redirects_and_forwards",
+      "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N",
+      "children": [
+        {
+          "id": "open_redirect",
+          "children": [
+            {
+              "id": "get_based",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "external_behavior",
+      "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+    },
+    {
+      "id": "insufficient_security_configurability",
+      "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N",
+      "children": [
+        {
+          "id": "no_password_policy",
+          "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N"
+        },
+        {
+          "id": "weak_password_reset_implementation",
+          "children": [
+            {
+              "id": "token_is_not_invalidated_after_use",
+              "cvss_v3": "AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N"
+            }
+          ]
+        },
+        {
+          "id": "weak_two_fa_implementation",
+          "children": [
+            {
+              "id": "two_fa_secret_cannot_be_rotated",
+              "cvss_v3": "AV:P/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+            },
+            {
+              "id": "two_fa_secret_remains_obtainable_after_two_fa_is_enabled",
+              "cvss_v3": "AV:P/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "using_components_with_known_vulnerabilities",
+      "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N",
+      "children": [
+        {
+          "id": "rosetta_flash",
+          "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:N"
+        }
+      ]
+    },
+    {
+      "id": "insecure_data_storage",
+      "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N",
+      "children": [
+        {
+          "id": "sensitive_application_data_stored_unencrypted",
+          "children": [
+            {
+              "id": "on_external_storage",
+              "cvss_v3": "AV:P/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+            }
+          ]
+        },
+        {
+          "id": "server_side_credentials_storage",
+          "children": [
+            {
+              "id": "plaintext",
+              "cvss_v3": "AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:L/A:N"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lack_of_binary_hardening",
+      "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+    },
+    {
+      "id": "insecure_data_transport",
+      "children": [
+        {
+          "id": "cleartext_transmission_of_sensitive_data",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        },
+        {
+          "id": "executable_download",
+          "children": [
+            {
+              "id": "no_secure_integrity_check",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:L/A:N"
+            },
+            {
+              "id": "secure_integrity_check",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:N/A:N"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physical_security_issues",
+      "children": [
+        {
+          "id": "bypass_of_physical_access_control",
+          "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:N/A:L"
+        },
+        {
+          "id": "weakness_in_physical_access_control",
+          "children": [
+            {
+              "id": "cloneable_key",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N"
+            },
+            {
+              "id": "master_key_identification",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:N/A:L"
+            },
+            {
+              "id": "commonly_keyed_system",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "insecure_os_firmware",
+      "children": [
+        {
+          "id": "command_injection",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L"
+        },
+        {
+          "id": "hardcoded_password",
+          "children": [
+            {
+              "id": "privileged_user",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L"
+            },
+            {
+              "id": "non_privileged_user",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+            }
+          ]
+        },
+        {
+          "id": "weakness_in_firmware_updates",
+          "children": [
+            {
+              "id": "firmware_cannot_be_updated",
+              "cvss_v3": "AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:L"
+            },
+            {
+              "id": "firmware_does_not_validate_update_integrity",
+              "cvss_v3": "AV:N/AC:H/PR:H/UI:R/S:C/C:H/I:H/A:H"
+            },
+            {
+              "id": "firmware_is_not_encrypted",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+            }
+          ]
+        },
+        {
+          "id": "kiosk_escape_or_breakout",
+          "cvss_v3": "AV:P/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:L"
+        },
+        {
+          "id": "poorly_configured_disk_encryption",
+          "cvss_v3": "AV:P/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "id": "shared_credentials_on_storage",
+          "cvss_v3": "AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        },
+        {
+          "id": "over_permissioned_credentials_on_storage",
+          "cvss_v3": "AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        },
+        {
+          "id": "local_administrator_on_default_environment",
+          "cvss_v3": "AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+        },
+        {
+          "id": "poorly_configured_operating_system_security",
+          "cvss_v3": "AV:L/AC:H/PR:H/UI:R/S:U/C:L/I:L/A:L"
+        },
+        {
+          "id": "recovery_of_disk_contains_sensitive_material",
+          "cvss_v3": "AV:P/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "id": "failure_to_remove_sensitive_artifacts_from_disk",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        },
+        {
+          "id": "data_not_encrypted_at_rest",
+          "children": [
+            {
+              "id": "non_sensitive",
+              "cvss_v3": "AV:P/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+            },
+            {
+              "id": "sensitive",
+              "cvss_v3": "AV:P/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cryptographic_weakness",
+      "children": [
+        {
+          "id": "insufficient_entropy",
+          "children": [
+            {
+              "id": "limited_rng_entropy_source",
+              "cvss_v3": "AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N"
+            },
+            {
+              "id": "use_of_trng_for_nonsecurity_purpose",
+              "cvss_v3": "AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H"
+            },
+            {
+              "id": "prng_seed_reuse",
+              "cvss_v3": "AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N"
+            },
+            {
+              "id": "predictable_prng_seed",
+              "cvss_v3": "AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N"
+            },
+            {
+              "id": "small_seed_space_in_prng",
+              "cvss_v3": "AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N"
+            },
+            {
+              "id": "initialization_vector_reuse",
+              "cvss_v3": "AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N"
+            },
+            {
+              "id": "predictable_initialization_vector",
+              "cvss_v3": "AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N"
+            }
+          ]
+        },
+        {
+          "id": "insecure_implementation",
+          "children": [
+            {
+              "id": "missing_cryptographic_step",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:L"
+            },
+            {
+              "id": "improper_following_of_specification",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:L"
+            }
+          ]
+        },
+        {
+          "id": "weak_hash",
+          "children": [
+            {
+              "id": "lack_of_salt",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:N"
+            },
+            {
+              "id": "use_of_predictable_salt",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:N"
+            },
+            {
+              "id": "predictable_hash_collision",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:N"
+            }
+          ]
+        },
+        {
+          "id": "insufficient_verification_of_data_authenticity",
+          "children": [
+            {
+              "id": "identity_check_value",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N"
+            },
+            {
+              "id": "cryptographic_signature",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N"
+            }
+          ]
+        },
+        {
+          "id": "insecure_key_generation",
+          "children": [
+            {
+              "id": "improper_asymmetric_prime_selection",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L"
+            },
+            {
+              "id": "improper_asymmetric_exponent_selection",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L"
+            },
+            {
+              "id": "insufficient_key_stretching",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N"
+            },
+            {
+              "id": "insufficient_key_space",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+            },
+            {
+              "id": "key_exchange_without_entity_authentication",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N"
+            }
+          ]
+        },
+        {
+          "id": "key_reuse",
+          "children": [
+            {
+              "id": "lack_of_perfect_forward_secrecy",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+            },
+            {
+              "id": "intra_environment",
+              "cvss_v3": "AV:L/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L"
+            },
+            {
+              "id": "inter_environment",
+              "cvss_v3": "AV:A/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H"
+            }
+          ]
+        },
+        {
+          "id": "broken_cryptography",
+          "children": [
+            {
+              "id": "use_of_broken_cryptographic_primitive",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+            },
+            {
+              "id": "use_of_vulnerable_cryptographic_library",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N"
+            }
+          ]
+        },
+        {
+          "id": "side_channel_attack",
+          "children": [
+            {
+              "id": "padding_oracle_attack",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+            },
+            {
+              "id": "timing_attack",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+            },
+            {
+              "id": "power_analysis_attack",
+              "cvss_v3": "AV:P/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+            },
+            {
+              "id": "emanations_attack",
+              "cvss_v3": "AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+            },
+            {
+              "id": "differential_fault_analysis",
+              "cvss_v3": "AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+            }
+          ]
+        },
+        {
+          "id": "use_of_expired_cryptographic_key_or_cert",
+          "cvss_v3": "AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:L"
+        },
+        {
+          "id": "incomplete_cleanup_of_keying_material",
+          "cvss_v3": "AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:L"
+        }
+      ]
+    },
+    {
+      "id": "privacy_concerns",
+      "children": [
+        {
+          "id": "unnecessary_data_collection",
+          "children": [
+            {
+              "id": "wifi_ssid_password",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "network_security_misconfiguration",
+      "children": [
+        {
+          "id": "telnet_enabled",
+          "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+        }
+      ]
+    },
+    {
+      "id": "mobile_security_misconfiguration",
+      "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N",
+      "children": [
+        {
+          "id": "clipboard_enabled",
+          "cvss_v3": "AV:L/AC:H/PR:N/UI:R/S:C/C:L/I:N/A:N"
+        },
+        {
+          "id": "auto_backup_allowed_by_default",
+          "cvss_v3": "AV:P/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ]
+    },
+    {
+      "id": "client_side_injection",
+      "children": [
+        {
+          "id": "binary_planting",
+          "children": [
+            {
+              "id": "privilege_escalation",
+              "cvss_v3": "AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+            },
+            {
+              "id": "non_default_folder_privilege_escalation",
+              "cvss_v3": "AV:L/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:N"
+            },
+            {
+              "id": "no_privilege_escalation",
+              "cvss_v3": "AV:L/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:N"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "automotive_security_misconfiguration",
+      "children": [
+        {
+          "id": "infotainment_radio_head_unit",
+          "children": [
+            {
+              "id": "sensitive_data_leakage_exposure",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H"
+            },
+            {
+              "id": "ota_firmware_manipulation",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+            },
+            {
+              "id": "code_execution_can_bus_pivot",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+            },
+            {
+              "id": "code_execution_no_can_bus_pivot",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:L"
+            },
+            {
+              "id": "unauthorized_access_to_services",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:L"
+            },
+            {
+              "id": "source_code_dump",
+              "cvss_v3": "AV:P/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L"
+            },
+            {
+              "id": "dos_brick",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+            },
+            {
+              "id": "default_credentials",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+            }
+          ]
+        },
+        {
+          "id": "rf_hub",
+          "children": [
+            {
+              "id": "key_fob_cloning",
+              "cvss_v3": "AV:A/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H"
+            },
+            {
+              "id": "can_injection_interaction",
+              "cvss_v3": "AV:P/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+            },
+            {
+              "id": "data_leakage_pull_encryption_mechanism",
+              "cvss_v3": "AV:A/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L"
+            },
+            {
+              "id": "unauthorized_access_turn_on",
+              "cvss_v3": "AV:A/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:L"
+            },
+            {
+              "id": "roll_jam",
+              "cvss_v3": "AV:A/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:N"
+            },
+            {
+              "id": "replay",
+              "cvss_v3": "AV:A/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:N"
+            },
+            {
+              "id": "relay",
+              "cvss_v3": "AV:A/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:N"
+            }
+          ]
+        },
+        {
+          "id": "can",
+          "children": [
+            {
+              "id": "injection_battery_management_system",
+              "cvss_v3": "AV:P/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:H"
+            },
+            {
+              "id": "injection_steering_control",
+              "cvss_v3": "AV:P/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:H"
+            },
+            {
+              "id": "injection_pyrotechnical_device_deployment_tool",
+              "cvss_v3": "AV:P/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:H"
+            },
+            {
+              "id": "injection_headlights",
+              "cvss_v3": "AV:P/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:H"
+            },
+            {
+              "id": "injection_sensors",
+              "cvss_v3": "AV:P/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:H"
+            },
+            {
+              "id": "injection_vehicle_anti_theft_systems",
+              "cvss_v3": "AV:P/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:H"
+            },
+            {
+              "id": "injection_powertrain",
+              "cvss_v3": "AV:P/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:H"
+            },
+            {
+              "id": "injection_basic_safety_message",
+              "cvss_v3": "AV:P/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:H"
+            },
+            {
+              "id": "injection_disallowed_messages",
+              "cvss_v3": "AV:P/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+            },
+            {
+              "id": "injection_dos",
+              "cvss_v3": "AV:P/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+            }
+          ]
+        },
+        {
+          "id": "battery_management_system",
+          "children": [
+            {
+              "id": "firmware_dump",
+              "cvss_v3": "AV:P/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H"
+            },
+            {
+              "id": "fraudulent_interface",
+              "cvss_v3": "AV:P/AC:H/PR:N/UI:R/S:U/C:L/I:H/A:H"
+            }
+          ]
+        },
+        {
+          "id": "gnss_gps",
+          "children": [
+            {
+              "id": "spoofing",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:H"
+            }
+          ]
+        },
+        {
+          "id": "immobilizer",
+          "children": [
+            {
+              "id": "engine_start",
+              "cvss_v3": "AV:P/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:H"
+            }
+          ]
+        },
+        {
+          "id": "abs",
+          "children": [
+            {
+              "id": "unintended_acceleration_brake",
+              "cvss_v3": "AV:P/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:H"
+            }
+          ]
+        },
+        {
+          "id": "rsu",
+          "children": [
+            {
+              "id": "sybil_attack",
+              "cvss_v3": "AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:H"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "indicators_of_compromise",
+      "cvss_v3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N"
+    },
+    {
+      "id": "ai_application_security",
+      "children": [
+        {
+          "id": "llm_security",
+          "children": [
+            {
+              "id": "prompt_injection",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:L/A:L"
+            },
+            {
+              "id": "llm_output_handling",
+              "cvss_v3": "AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:L"
+            },
+            {
+              "id": "training_data_poisoning",
+              "cvss_v3": "AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H"
+            },
+            {
+              "id": "excessive_agency_permission_manipulation",
+              "cvss_v3": "AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
